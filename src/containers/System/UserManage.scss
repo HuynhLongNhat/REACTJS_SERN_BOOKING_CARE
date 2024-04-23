@@ -1,0 +1,112 @@
+* {
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+}
+
+#customers {
+    font-family    : Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width          : 100%;
+    text-align     : center;
+}
+
+#customers td,
+#customers th {
+    border : 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top     : 12px;
+    padding-bottom  : 12px;
+    text-align      : left;
+    background-color: #04AA6D;
+    color           : white;
+}
+
+.btn-edit {
+    outline      : none;
+    border       : none;
+    color        : orange;
+    height       : 25px;
+    width        : 60px;
+    border-radius: 3px;
+    cursor       : pointer;
+    margin-right : 10px;
+    background   : transparent;
+
+    &:hover {
+        background-color: transparent !important;
+        color           : orange !important
+    }
+
+}
+
+.btn-delete {
+    outline      : none;
+    border       : none;
+    color        : #ff0023;
+    background   : transparent;
+    height       : 25px;
+    width        : 60px;
+    border-radius: 3px;
+    cursor       : pointer;
+
+    &:hover {
+        background-color: transparent !important;
+        color           : red !important
+    }
+}
+
+a {
+    text-decoration: none;
+    color          : black
+}
+
+.modal-user-container {
+    .modal-content {
+        .modal-header {
+            button {
+                background-color: transparent;
+                color           : #fff;
+                border          : none;
+                font-size       : 27px;
+
+            }
+        }
+    }
+
+    .modal-user-body {
+        display  : flex;
+        gap      : 15px;
+        flex-wrap: wrap;
+
+        .input-container {
+            display       : flex;
+            flex-direction: column;
+            width         : 49%;
+
+            &.max-with-input {
+                width: 100%
+            }
+
+            input {
+                border-radius: 3px;
+                border       : 1px solid gray;
+                outline      : none;
+                height       : 30px;
+                padding      : 0 10px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,21 @@
+.section-body {
+    padding-bottom: 20px;
+    .clinic-child {
+        width: calc(100% / 4 -20px);
+        border: 1px solid #ccc;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 20px;
+
+        .clinic-name {
+            padding: 20px 0;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+
+            &:hover {
+                color: #45c3d2;
+            }
+        }
+    }
+}
